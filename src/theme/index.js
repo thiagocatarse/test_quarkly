@@ -64,7 +64,8 @@ export default {
 	},
 	"background": {
 		"primaryGradient": "linear-gradient(180deg, --color-primary, transparent) no-repeat 0 0",
-		"secondaryGradient": "linear-gradient(180deg, --color-secondary, transparent) no-repeat 0 0"
+		"secondaryGradient": "linear-gradient(180deg, --color-secondary, transparent) no-repeat 0 0",
+		"primary": "#3d9821"
 	},
 	"transform": {
 		"rotate90": "rotate(90deg)",
@@ -151,5 +152,5 @@ export default {
 			}
 		}
 	},
-	"version": 1
+	"version": 3
 }
