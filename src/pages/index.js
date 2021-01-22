@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Box } from "@quarkly/widgets";
+import { Theme, Link, Image, Box, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
@@ -27,10 +27,22 @@ export default (() => {
 					Explore
 				</Components.HeaderLink>
 			</Box>
-			<Components.HeaderSearch display="flex">
+			<Components.HeaderSearch display="flex" align-items="center">
 				<Override slot="input" />
 			</Components.HeaderSearch>
 		</Components.CatarseHeader>
+		<Components.BannerSlide
+			display="flex"
+			min-height="420px"
+			align-items="center"
+			flex-direction="column"
+			justify-content="center"
+		>
+			<Text as="h1">
+				Algum texto aqui
+			</Text>
+			<Components.ButtonPrimary />
+		</Components.BannerSlide>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
