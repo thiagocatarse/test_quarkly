@@ -3,11 +3,11 @@ import { useOverrides } from "@quarkly/components";
 import { Link } from "@quarkly/widgets";
 const defaultProps = {
 	"href": "#",
-	"color": "white",
 	"text-decoration-line": "initial",
 	"quarkly-title": "header-link",
 	"children": "Comece seu projeto",
-	"padding": "0 30px 0 30px"
+	"padding": "0 30px 0 30px",
+	"color": "--light"
 };
 const overrides = {};
 
