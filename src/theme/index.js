@@ -47,14 +47,16 @@ export default {
 		"mono": "Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace",
 		"serifTimes": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif",
 		"serifGeorgia": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
-		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif"
+		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif",
+		"googleMontserrat": "Montserrat, sans-serif",
+		"googleLato": "Lato, sans-serif"
 	},
 	"font": {
-		"headline1": "normal 900 72px/1.2 --fontFamily-sans",
-		"headline2": "normal 900 42px/1.2 --fontFamily-sans",
-		"headline3": "normal 500 28px/1.2 --fontFamily-sans",
-		"base": "normal 300 16px/1.5 --fontFamily-sans",
-		"lead": "normal 300 20px/1.5 --fontFamily-sans"
+		"headline1": "normal 900 72px/1.2 --fontFamily-googleLato",
+		"headline2": "normal 900 42px/1.2 --fontFamily-googleLato",
+		"headline3": "normal 500 28px/1.2 --fontFamily-googleLato",
+		"base": "normal 300 16px/1.5 --fontFamily-googleLato",
+		"lead": "normal 300 20px/1.5 --fontFamily-googleLato"
 	},
 	"boxShadow": {
 		"m": "0 4px 5px -1px rgba(0, 0, 0, 0.1)",
@@ -64,7 +66,9 @@ export default {
 	},
 	"background": {
 		"primaryGradient": "linear-gradient(180deg, --color-primary, transparent) no-repeat 0 0",
-		"secondaryGradient": "linear-gradient(180deg, --color-secondary, transparent) no-repeat 0 0"
+		"secondaryGradient": "linear-gradient(180deg, --color-secondary, transparent) no-repeat 0 0",
+		"darkOpacity": "rgba(37,49,57,0.6)",
+		"darkBg": "#3f4752"
 	},
 	"transform": {
 		"rotate90": "rotate(90deg)",
@@ -75,7 +79,8 @@ export default {
 	"transition": {
 		"opacityOut": "opacity --transitionDuration-normal --transitionTimingFunction-easeOut",
 		"transformOut": "transform --transitionDuration-normal --transitionTimingFunction-easeOut",
-		"transformInOut": "transform --transitionDuration-normal --transitionTimingFunction-easeInOut"
+		"transformInOut": "transform --transitionDuration-normal --transitionTimingFunction-easeInOut",
+		"allEase": "all --transitionDuration-normal --transitionTimingFunction-easeIn 0s"
 	},
 	"transitionTimingFunction": {
 		"easeIn": "cubic-bezier(0.4, 0, 1, 1)",
@@ -151,5 +156,53 @@ export default {
 			}
 		}
 	},
-	"version": 1
+	"fonts": {
+		"Montserrat": {
+			"family": "Montserrat",
+			"type": "google-fonts",
+			"meta": {
+				"category": "sans-serif",
+				"variants": [
+					"100",
+					"100italic",
+					"200",
+					"200italic",
+					"300",
+					"300italic",
+					"regular",
+					"italic",
+					"500",
+					"500italic",
+					"600",
+					"600italic",
+					"700",
+					"700italic",
+					"800",
+					"800italic",
+					"900",
+					"900italic"
+				]
+			}
+		},
+		"Lato": {
+			"family": "Lato",
+			"type": "google-fonts",
+			"meta": {
+				"category": "sans-serif",
+				"variants": [
+					"100",
+					"100italic",
+					"300",
+					"300italic",
+					"regular",
+					"italic",
+					"700",
+					"700italic",
+					"900",
+					"900italic"
+				]
+			}
+		}
+	},
+	"version": 22
 }

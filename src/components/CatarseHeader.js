@@ -3,7 +3,8 @@ import { useOverrides } from "@quarkly/components";
 import { Box } from "@quarkly/widgets";
 const defaultProps = {
 	"quarkly-title": "Header",
-	"display": "flex"
+	"display": "flex",
+	"background": "--darkBg"
 };
 const overrides = {};
 

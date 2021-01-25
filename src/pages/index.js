@@ -3,7 +3,6 @@ import theme from "theme";
 import { Theme, Link, Image, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -15,7 +14,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.CatarseHeader background="black">
+		<Components.CatarseHeader>
 			<Box>
 				<Image width="100px" height="64px" src="https://uploads.quarkly.io/5fa9e8bd8996cc001edcaced/images/logo_big.png?v=2021-01-22T01:59:38.485Z" />
 			</Box>
@@ -27,9 +26,7 @@ export default (() => {
 					Explore
 				</Components.HeaderLink>
 			</Box>
-			<Components.HeaderSearch display="flex">
-				<Override slot="input" />
-			</Components.HeaderSearch>
+			<Components.HeaderSearch display="flex" align-items="center" />
 		</Components.CatarseHeader>
 		<Link
 			font={"--capture"}
